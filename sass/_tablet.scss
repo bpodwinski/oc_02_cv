@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+
+    .right-column {
+
+        .main {
+            margin: 6rem 2.5rem 3rem;
+
+            .recommandation {
+                .col-12 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .left-column {
+        padding-bottom: 2rem;
+
+        .contact {
+            text-align: left;
+        }
+    }
+
+    .hobbies {
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        right: 0;
+
+        .row {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h4 {
+            margin: 0 0 2rem;
+        }
+
+        i.fas {
+            font-size: 2.5rem;
+
+            &::after {
+                content: '';
+                display: block;
+                height: 64px;
+                width: 64px;
+                border: 2px solid #404040;
+                border-radius: 50px;
+            }
+        }
+    }
+}
