@@ -5,6 +5,16 @@
         .main {
             margin: 6rem 2.5rem 3rem;
 
+        .experience article::before {display: none;}
+
+        .education,
+        .experience {
+            .col-12 {
+                text-align: initial;
+                margin-bottom: 0;
+            }
+        }
+
             .recommandation {
                 .col-12 {
                     text-align: left;
