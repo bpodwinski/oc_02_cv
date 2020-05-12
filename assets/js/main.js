@@ -122,4 +122,3 @@ module.exports = __webpack_require__(/*! ./assets/scss/main.scss */"./assets/scs
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.js.map

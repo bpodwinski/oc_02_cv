@@ -1,17 +1,19 @@
 const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+let devtool = "source-map";
 let sourceMap = true;
 let outputStyle = "expanded";
 
 if (process.env.NODE_ENV === "production") {
+  devtool = "false";
   sourceMap = false;
   outputStyle = "compressed";
 }
 
 module.exports = {
   mode: "development",
-  devtool: "source-map",
+  devtool: devtool,
   entry: {
     main: ["./assets/js/app.js", "./assets/scss/main.scss"],
   },
