@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+  .curriculum {
+    padding: 3rem;
+  }
+
+  .right-column {
+    .main {
+      margin: 6rem 2.5rem 3rem;
+
+      .experience article::before {
+        display: none;
+      }
+
+      .education,
+      .experience {
+        .col-12 {
+          text-align: initial;
+          margin-bottom: 0;
+        }
+      }
+
+      .recommandation {
+        .col-12 {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .left-column {
+    padding-bottom: 2rem;
+
+    .contact {
+      text-align: left;
+    }
+
+    .hobbies {
+      position: absolute;
+      bottom: 3rem;
+      left: 0;
+      right: 0;
+
+      .row {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      h3 {
+        margin: 2rem 0;
+      }
+
+      i.fas {
+        font-size: 2.5rem;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 64px;
+          width: 64px;
+          border: 2px solid $bgdark;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}

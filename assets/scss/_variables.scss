@@ -1,0 +1,10 @@
+// Fontawesome path : https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+$yellow: #2c2e35;
+$bgdark: lighten($yellow, 25%);
+
+// Progress bars
+$progress-height: 0.5rem !default;
+$progress-bg: $bgdark !default;
+$progress-bar-color: #fff !default;
+$progress-bar-bg: rgba(#fff, 1) !default;

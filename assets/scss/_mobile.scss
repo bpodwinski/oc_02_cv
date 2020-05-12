@@ -1,0 +1,266 @@
+::selection {
+  color: #fff;
+  background: lighten($yellow, 15%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: no-repeat center center fixed url("../img/cv_thumb.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: darken($bgdark, 15%);
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  span {
+    color: $yellow;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+
+  span {
+    text-decoration: underline;
+    text-decoration-color: $yellow;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+  border-bottom: 2px solid $yellow;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  i.fas {
+    width: 100%;
+    color: $yellow;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+a {
+  color: $bgdark;
+  text-decoration: underline;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: lighten($bgdark, 20%);
+  }
+}
+
+.curriculum {
+  padding: 1.5rem;
+
+  .container {
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(#111, 0.6);
+  }
+}
+
+.left-column {
+  background-color: $yellow;
+  padding-bottom: 3rem;
+  color: #e9e9e9;
+
+  a {
+    color: #e9e9e9;
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .picture {
+    border: 2px solid rgba(#fff, 0.4);
+    border-radius: 220px;
+    width: 220px;
+    height: auto;
+    margin: 2.5rem auto;
+    overflow: hidden;
+    pointer-events: none;
+
+    img {
+      width: 220px;
+      height: auto;
+    }
+  }
+
+  h3 {
+    background-color: $bgdark;
+    text-align: center;
+    color: $yellow;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  .contact {
+    text-align: center;
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    span:first-child {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  .competence {
+    h3 {
+      margin: 2rem -15px;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    p {
+      font-style: italic;
+      color: rgba(#fff, 0.8);
+    }
+  }
+
+  .contact,
+  .about {
+    h3 {
+      margin: 2rem -15px;
+    }
+
+    div,
+    p {
+      margin: 0 1rem 1.5rem;
+    }
+  }
+
+  .about {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .hobbies {
+    h3 {
+      margin: 2rem -15px;
+    }
+
+    .row {
+      margin-top: 2.5rem;
+    }
+
+    i.fas {
+      text-align: center;
+      font-size: 2rem;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        margin: 0 auto;
+        content: "";
+        display: block;
+        height: 54px;
+        width: 54px;
+        border: 2px solid $bgdark;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.right-column {
+  .main {
+    margin: 6rem 0 3rem;
+
+    h1,
+    h2 {
+      display: none;
+    }
+
+    article {
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+      p {
+        margin: 0;
+      }
+    }
+
+    .formation,
+    .post {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .education {
+      margin-top: 6rem;
+    }
+
+    .experience {
+      article {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: block;
+          height: 1px;
+          width: 70%;
+          margin: 0 auto;
+          background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+      }
+    }
+
+    .education,
+    .experience {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .experience,
+    .recommandation {
+      margin-top: 2rem;
+    }
+
+    .recommandation {
+      .col-12 {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
