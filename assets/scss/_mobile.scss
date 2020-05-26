@@ -60,7 +60,7 @@ a {
   transition: all 0.2s ease-in;
 
   &:hover {
-    color: lighten($bgdark, 20%);
+    color: lighten($bgdark, 20%) !important;
   }
 }
 
@@ -241,6 +241,11 @@ a {
           width: 70%;
           margin: 0 auto;
           background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+
+        a {
+          color: $yellow;
+          text-decoration: none;
         }
       }
     }
